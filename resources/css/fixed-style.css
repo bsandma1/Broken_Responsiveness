@@ -21,8 +21,10 @@ html {
 
 .button {
   border-radius: 4px;
-  background-color: #4a4a4a;
+  background-color: rgb(157, 194, 11);
   color: white;
+  padding: .35rem .8rem;
+  
 }
 
 .image-container {
@@ -92,18 +94,65 @@ header .icon {
   padding-left: .75rem;
 }
 
+header .tablet {
+  display: none;
+}
+
 header .mobile {
   display: none;
 }
 
-@media only screen and (min-width: 760px) {
-  header .desktop li {
-    list-style-type: none;
+header li {
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 820px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .tablet {
+    display: block;
+  }
+
+  header .logo {
+    display: block;
+  }
+
+  header .icon {
+    padding-left: .375rem
+  }
+
+  header .content {
+    padding-right: 15px;
+  }
+
+  nav.tablet li:last-of-type {
+    padding-left: 25px;
+  }
+
+}
+
+@media only screen and (max-width: 740px) {
+  header .logo {
+    font-size: 1.3rem;
+  }
+
+  nav li, nav a {
+    font-size: 0.8rem;
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 650px) {
+  header {
+    height: 48px;
+  }
+  
   header .desktop {
+    display: none;
+  }
+
+  header .tablet {
     display: none;
   }
 
@@ -114,6 +163,7 @@ header .mobile {
 
   header .content {
     padding: .5rem 0;
+    height: auto;
   }
 
   header .mobile ul {
@@ -128,10 +178,11 @@ header .mobile {
   }
 
   header .mobile .button {
-    padding: .1875rem .5rem;
+    padding: 3px 8px;
     background-color: #9dc20b;
     line-height: 1.6;
     color: white;
+
   }
 }
 
