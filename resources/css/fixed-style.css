@@ -24,7 +24,6 @@ html {
   background-color: rgb(157, 194, 11);
   color: white;
   padding: .35rem .8rem;
-  
 }
 
 .image-container {
@@ -51,6 +50,7 @@ header {
   background-color: white;
   display: flex;
   align-items: center;
+  z-index: 5;
 }
 
 header .content {
@@ -130,7 +130,6 @@ header li {
   nav.tablet li:last-of-type {
     padding-left: 25px;
   }
-
 }
 
 @media only screen and (max-width: 740px) {
@@ -182,7 +181,6 @@ header li {
     background-color: #9dc20b;
     line-height: 1.6;
     color: white;
-
   }
 }
 
@@ -193,18 +191,22 @@ header li {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url(../images/banner-landingpage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #sign-up-cta {
-  padding: 0 5rem 2.5rem 5rem;
-  border: solid 1px #979797;
+  display: flex;
+  border: 1px solid #979797;
   border-radius: 4px;
-  background-color: #9dc20b;
+  background-color: #9dc20a;
+  margin: 170px 0 170px 100px;
+  padding: 2rem 5rem 3.5rem 5rem;
 }
 
 #sign-up-cta .content {
   width: 25.625rem;
-  margin-top: 2rem;
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   line-height: 1.4;
@@ -213,6 +215,9 @@ header li {
 
 #sign-up-cta h1 {
   font-size: 3.125rem;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  line-height: 1.4;
 }
 
 #sign-up-cta h2 {
@@ -228,13 +233,35 @@ header li {
 }
 
 #sign-up-cta .striking {
-  font-family: "Rubik", sans-serif;
   padding-bottom: .75rem;
 }
 
+#sign-up-cta .email {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#sign-up-cta .email span {
+  font-family: "Roboto";
+  color: white;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
 #sign-up-cta .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 1.625rem;
-  padding: 1.25rem 7.25rem;
+  width: 408px;
+  height: 64px;
+  background-color: #4a4a4a;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  font-weight: bold;
+  line-height: 1.4;
 }
 
 @media only screen and (max-width: 760px) {
