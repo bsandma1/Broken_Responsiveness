@@ -277,6 +277,7 @@ header li {
     height: auto;
     background-color: transparent;
     border: none;
+    margin: auto;
   }
 
   #sign-up-cta .content {
