@@ -533,11 +533,11 @@ header li {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -546,23 +546,42 @@ header li {
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
+@media only screen and (max-width: 1200px) {
+  #quotes-section .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #quotes-section .quote {
+    margin: auto;
+  }
+
+  #quotes-section .quote-citation {
+    margin: auto;
+    padding-right: 1.875rem;
+  }
+}
+
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
+    display: block;
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
+    padding-right: 0;
     margin: auto;
   }
 }
