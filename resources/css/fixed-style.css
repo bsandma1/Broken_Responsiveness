@@ -412,7 +412,7 @@ header li {
   }
 
   .feature.image-1 {
-    background-color: rgb(209, 208, 208);
+    background-color: rgb(231, 230, 230);
   }
 
   .feature .content {
@@ -446,13 +446,15 @@ header li {
 
 #filters-section .content {
   padding: 0 .625rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 #filters-section .content h2 {
   font-size: 2.25rem;
   font-weight: bold;
   color: white;
+  opacity: 100%;
+  margin-bottom: .5rem;
 }
 
 #filters-section .content h3 {
@@ -460,11 +462,37 @@ header li {
   line-height: 1.4;
   font-weight: 300;
   color: white;
+  width: 40%;
+  margin: auto;
 }
 
 #filters-section .images-container {
+  display: flex;
+  justify-content: center;
   max-width: 100%;
   padding: 0 1%;
+}
+
+#filters-section .images-container img{
+  width: 100%;
+}
+
+@media only screen and (max-width: 890px) {
+  #filters-section {
+    padding-bottom: 0;
+  }
+
+  #filters-section .content {
+    padding: 0 .625rem;
+  }
+
+  #filters-section .content h3 {
+    width: 100%;
+  }
+
+  #filters-section .images-container {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 760px) {
@@ -473,7 +501,7 @@ header li {
   }
 
   #filters-section .content {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   #filters-section .content h2 {
@@ -486,6 +514,8 @@ header li {
   #filters-section .content h3 {
     font-size: .875rem;
     line-height: 1.4;
+    width: 60%;
+    margin: auto;
   }
 
   #filters-section .images-container {
