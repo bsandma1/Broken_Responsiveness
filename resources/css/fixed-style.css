@@ -322,7 +322,7 @@ header li {
 
 .feature {
   flex: 1;
-  height: 39.6875rem;
+  width: 100%;
   padding: 2rem 2rem 0 2rem;
   margin: 0 1.25rem;
   background-color: white;
@@ -330,7 +330,8 @@ header li {
 }
 
 .feature .image-container {
-  height: 65%;
+  width: 100%;
+  margin: auto;
 }
 
 .feature img {
@@ -338,67 +339,43 @@ header li {
 }
 
 .feature .content {
-  height: 35%;
-  padding: 0 5.5%;
+  width: 100%;
+  padding: 2.5rem 0;
+  margin: auto;
 }
 
 .feature h2 {
-  position: relative;
-  top: 3rem;
   font-family: "Roboto";
   font-size: 2.25rem;
   font-weight: bold;
   line-height: 1.2;
   color: #4a4a4a;
   width: 100%;
+  margin: auto;
 }
 
 .feature h3 {
-  position: relative;
-  top: 3.5rem;
+  padding-top: .5rem;
   font-family: "Roboto";
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 300;
   color: #4a4a4a;
   width: 100%;
-}
-
-@media only screen and (max-width: 1400px) {
-  .feature {
-    height: 30rem;
-    text-align: left;
-  }
-  
-  .feature h2 {
-    top: 2.5rem;
-    font-size: 1.5rem;
-    line-height: 1.3;
-  }
-
-  .feature h3 {
-    top: 3rem;
-    margin-top: 2%;
-    font-size: .875rem;
-    line-height: 1.4;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .feature h2 {
-    top: 0;
-  }
-
-  .feature h3 {
-    top: 0.5rem;
-  }
+  margin: auto;
 }
 
 @media only screen and (max-width: 890px) {
   .feature {
-    height: 27rem;
+    text-align: left;
   }
 }
+
+@media only screen and (max-width: 760px) {
+  
+}
+
+/* 
 
 @media only screen and (max-width: 760px) {
   #features-section {
@@ -435,7 +412,7 @@ header li {
     padding-bottom: 1.875rem;
     line-height: 1.4;
   }
-}
+} */
 
 /* Filters Section */
 
@@ -597,6 +574,7 @@ footer .content {
   color: white;
   display: flex;
   font-size: .75rem;
+  font-family: "Roboto";
 }
 
 footer .copyright {
